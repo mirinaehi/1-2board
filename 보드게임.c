@@ -26,24 +26,16 @@ void main(void)
 	srand(time(0));
 	rand();
 
-	dice = rand() % 6 + 1;
-	position = position + dice;
 	printf("현재위치 : %d\n\n", position);
 	getchar();
 
-	//주사위 던지기 (1부터 6까지)
-	dice = rand() % 6 + 1;
-	position = position + dice;
-	printf("현재위치 : %d\n\n", position);
-	getchar();
+	while(1)
+	{
+		//주사위 던지기 (1부터 6까지)
+		dice = rand() % 6 + 1;
+		position = position + dice;
+		printf("현재위치 : %d\n\n", position);
+		getchar();
+	}
 
-	dice = rand() % 6 + 1;
-	position = position + dice;
-	printf("현재위치 : %d\n\n", position);
-	getchar();
-
-	dice = rand() % 6 + 1;
-	position = position + dice;
-	printf("현재위치 : %d\n\n", position);
-	getchar();
 }
