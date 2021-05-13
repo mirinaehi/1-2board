@@ -7,23 +7,43 @@
 *		- 아이템 인벤토리 (나중에 가능하면)
 */
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 void main(void)
 {
-	// 칸의 최대갯수
+	//칸의 최대갯수
 	int max_length = 61;
 
-	// 주사위
+	//플레이어의 위치
+	int position = 0;
+
+	//주사위
 	int dice;
 
-	srand( time(0) );
+	srand(time(0));
 	rand();
+
 	dice = rand() % 6 + 1;
-	
-	printf("%d\n", dice);
+	position = position + dice;
+	printf("현재위치 : %d\n\n", position);
+	getchar();
 
+	//주사위 던지기 (1부터 6까지)
+	dice = rand() % 6 + 1;
+	position = position + dice;
+	printf("현재위치 : %d\n\n", position);
+	getchar();
 
+	dice = rand() % 6 + 1;
+	position = position + dice;
+	printf("현재위치 : %d\n\n", position);
+	getchar();
+
+	dice = rand() % 6 + 1;
+	position = position + dice;
+	printf("현재위치 : %d\n\n", position);
+	getchar();
 }
