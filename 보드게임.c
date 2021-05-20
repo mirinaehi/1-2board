@@ -23,10 +23,12 @@ void main(void)
 	//주사위
 	int dice;
 
+	int money = 5000000;
+
 	srand(time(0));
 	rand();
 
-	printf("현재위치 : %d\n\n", position);
+	printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 	
 
 	while(1)
@@ -35,7 +37,8 @@ void main(void)
 		//주사위 던지기 (1부터 6까지)
 		dice = rand() % 6 + 1;
 		position = position + dice;
-		printf("현재위치 : %d\n\n", position);
+		printf("주사위를 던져서 %d가 나왔습니다.\n", dice);
+		printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 		
 
 		if (position > 61)
