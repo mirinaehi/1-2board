@@ -5,6 +5,8 @@
 *		- 위치정보(말) : 0 부터 시작
 *		- 돈 : 5,000,000 부터 시작
 *		- 아이템 인벤토리 (나중에 가능하면)
+*	3. 파산의 기준
+*		- 0원이 되자마자 파산
 */
 
 
@@ -29,9 +31,9 @@ void main(void)
 	rand();
 
 	printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
-	
 
-	while(1)
+
+	while (1)
 	{
 		getchar();		// 주사위를 던지기 위해서는 엔터키를 눌러야 한다.
 		//주사위 던지기 (1부터 6까지)
@@ -39,7 +41,7 @@ void main(void)
 		position = position + dice;
 		printf("주사위를 던져서 %d가 나왔습니다.\n", dice);
 		printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
-		
+
 		// 7번에 있을때는 3번으로 이동
 		if (position == 7)
 		{
@@ -53,6 +55,13 @@ void main(void)
 			printf("주식이 떨어져 200만원이 차감됩니다.\n");
 			money -= 2000000;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
+		}
+
+		// 파산처리
+		if (money <= 0)
+		{
+			printf("파산 하였습니다ㅠㅠㅠ\n");
+			break;
 		}
 
 		// 61을 넘기면 목적지에 도착함
