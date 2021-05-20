@@ -36,6 +36,11 @@ void main(void)
 		position = position + dice;
 		printf("현재위치 : %d\n\n", position);
 		getchar();
+
+		if (position > 61)
+		{
+			printf("축하합니다. 목적지에 도달하였습니다.\n");
+		}
 	}
 
 }
