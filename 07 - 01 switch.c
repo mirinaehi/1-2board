@@ -2,18 +2,15 @@
 
 void main(void)
 {
-	int a = 3;
+	int a = 1;
 
-	if (a == 1)
+	switch (a)
 	{
-		printf("한화의 김성근");
-	}
-	else if (a == 2)
-	{
-		printf("감독님 사랑해");
-	}
-	else
-	{
-		printf("예예예 예예예 예예예 예예예 예예예 예예예 예");
+	case 1:
+		printf("한화의 김성근\n");
+	case 2:
+		printf("감독님 사랑해\n");
+	default:
+		printf("예예예 예예예 예예예 예예예 예예예 예예예 예\n");
 	}
 }
