@@ -4,11 +4,8 @@ void main(void)
 {
 	int dan = 2;
 
-	int i = 1;
-	while (i <= 9)
+	for (int i = 1; i <= 9; i++)
 	{
 		printf("%d X %d = %d\n", dan, i, dan * i);
-		i++;
 	}
-
 }
