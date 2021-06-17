@@ -1,13 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 
 void main(void)
 {
-	for (int dan = 2; dan <= 9; dan++)
+	int dan = 2;
+	while (dan <= 9)
 	{
-		for (int i = 1; i <= 9; i++)
+		int i = 1;
+		while (i <= 9)
 		{
 			printf("%d X %d = %d\n", dan, i, dan * i);
+			i++;
 		}
 		printf("\n");
+		dan++;
 	}
 }
