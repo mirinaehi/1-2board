@@ -12,7 +12,7 @@ void main(void)
 		{
 			if (i == 5)
 			{
-				break;	// 안쪽 for문을 벗어난다
+				continue;	// 안쪽 for문의 한 턴을 쉰다
 			}
 			printf("%d X %d = %d\n", dan, i, dan * i);
 		}
