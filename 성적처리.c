@@ -1,40 +1,42 @@
-О╩©#include <stdio.h>
+#include <stdio.h>
 
-// Л·┘К═╔К╟⌡Л²─ Л═░Л┬≤(score)Л≈░ К▄─М∙° К⌠╠Й╦┴Л²└ Л╤°К═╔
-void cal_grade(int score)
-{
-	if (90 <= score && score <= 100)
-		printf("AЛ·┘К▀┬К▀╓ \n");
-	else if (80 <= score)
-		printf("BЛ·┘К▀┬К▀╓ \n");
-	else if (70 <= score)
-		printf("CЛ·┘К▀┬К▀╓ \n");
-	else if (60 <= score)
-		printf("DЛ·┘К▀┬К▀╓ \n");
-	else
-		printf("EЛ·┘К▀┬К▀╓ \n");
-}
+void cal_grade(int score);
 
 void main(void)
 {
 	int C_score;
-	printf("Л■╗Л√╦Л√╢ Л═░Л┬≤К╔╪ Л·┘К═╔М∙≤Л└╦Л ■ : ");
+	printf("╬╬╬П╬Н а║╪Ж╦╕ ют╥бго╪╪©Д : ");
 	scanf("%d", &C_score);
 
 	cal_grade(C_score);
-	
-	
+
+
 	int java_score;
-	printf("Л·░К╟■ Л═░Л┬≤К╔╪ Л·┘К═╔М∙≤`Л└╦Л ■ : ");
+	printf("юз╧ы а║╪Ж╦╕ ют╥бго╪╪©Д : ");
 	scanf("%d", &java_score);
 
 	cal_grade(java_score);
-	
-	
+
+
 	int CA_score;
-	printf("Л╩╢М⌠╗М└╟Й╣╛Л║╟ Л═░Л┬≤К╔╪ Л·┘К═╔М∙≤Л└╦Л ■ : ");
+	printf("ддг╩ем╠╦а╤ а║╪Ж╦╕ ют╥бго╪╪©Д : ");
 	scanf("%d", &CA_score);
 
 	cal_grade(CA_score);
-	
+
+}
+
+// ют╥б╧чю╨ а║╪Ж(score)©║ ╢Кгя ╣Н╠чю╩ цБ╥б
+void cal_grade(int score)
+{
+	if (90 <= score && score <= 100)
+		printf("Aют╢о╢ы \n");
+	else if (80 <= score)
+		printf("Bют╢о╢ы \n");
+	else if (70 <= score)
+		printf("Cют╢о╢ы \n");
+	else if (60 <= score)
+		printf("Dют╢о╢ы \n");
+	else
+		printf("Eют╢о╢ы \n");
 }
