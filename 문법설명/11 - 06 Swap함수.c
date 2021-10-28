@@ -5,9 +5,9 @@ void Swap(int* num1, int* num2);
 void main(void)
 {
 	int a = 10, b = 20;
-	printf("¹Ù²Ù±â Àü a:%d b:%d \n", a, b);
+	printf("ë³€ê²½ ì „ a:%d b:%d \n", a, b);
 	Swap(&a, &b);
-	printf("¹Ù²Ù±â ÈÄ a:%d b:%d \n", a, b);
+	printf("ë³€ê²½ í›„ a:%d b:%d \n", a, b);
 }
 
 void Swap(int* num1, int* num2)
