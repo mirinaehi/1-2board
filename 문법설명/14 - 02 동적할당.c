@@ -1,21 +1,27 @@
+// printf í•¨ìˆ˜ ì‚¬ìš©
 #include <stdio.h>
+
+// malloc, free í•¨ìˆ˜ ì‚¬ìš©
 #include <stdlib.h>
 
 void main(void)
 {
-	// Áö¿ªº¯¼ö¿¡ ÇÒ´çµÈ ¹è¿­(stack ¿µ¿ª¿¡ ÇÒ´ç)
+	// ì§€ì—­ë³€ìˆ˜ì— í• ë‹¹ëœ ë°°ì—´(stack ì˜ì—­ì— í• ë‹¹)
 	int arr[4] = { 10, 20, 30, 40 };
 
-	int count;	// Áö¿ªº¯¼ö(stack ¿µ¿ª¿¡ ÇÒ´ç)
-	printf("¿øÇÏ´Â int°ø°£ÀÇ °¹¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	int count;	// ì§€ì—­ë³€ìˆ˜(stack ì˜ì—­ì— í• ë‹¹)
+	printf("ì›í•˜ëŠ” intê³µê°„ì˜ ê°¯ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤ : ");
 	
 	count = 4;
 	//scanf("%d", &count);
 
-	// Å°º¸µå ÀÔ·Â°úÁ¤Àº ÇÁ·Î±×·¥ ½ÇÇà¼Ó¿¡ ÁøÇàµÊ
-	// mallocÀ¸·Î ÇÒ´çµÈ ¸Þ¸ð¸® Å©±â´Â Å°º¸µå·Î ÀÔ·ÂÇÑ ¼ø°£¿¡ °áÁ¤
-	// ptrÀº Áö¿ªº¯¼ö(stack¿¡ ÇÒ´ç)
+	// í‚¤ë³´ë“œ ìž…ë ¥ê³¼ì •ì€ í”„ë¡œê·¸ëž¨ ì‹¤í–‰ì†ì— ì§„í–‰ë¨
+	// mallocìœ¼ë¡œ í• ë‹¹ëœ ë©”ëª¨ë¦¬ í¬ê¸°ëŠ” í‚¤ë³´ë“œë¡œ ìž…ë ¥í•œ ìˆœê°„ì— ê²°ì •
+	// ptrì€ ì§€ì—­ë³€ìˆ˜(stackì— í• ë‹¹)
 	int* ptr = malloc(sizeof(int) * count);
 	ptr[0] = 10; ptr[1] = 20; ptr[2] = 30; ptr[3] = 40;
+	
+	// ë™ì í• ë‹¹ëœ ë©”ëª¨ë¦¬ë¥¼ í•´ì œ
+	free(ptr);
 
 }
